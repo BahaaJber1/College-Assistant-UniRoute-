@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/study_plan.css') }}">
+    <title>Study Plan</title>
+</head>
+<body>
+    
+    
+    
+    <div class="study-plan-container">
+        <button onclick="exportStudyPlan('excel')">Export Study Plan as Excel</button>
+        <h2>Study Plan</h2>
+        <form id="studyPlanForm">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Category</th>
+                        <th>Credit Hours</th>
+                        <th>Completed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for course in courses %}
+                    <tr class="{% if course[4] %}completed{% endif %}">
+                        <td>{{ course[0] }}</td>
+                        <td>{{ course[1] }}</td>
+                        <td>{{ course[2] }}</td>
+                        <td>{{ course[3] }}</td>
+                        <td>
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                name="completed_courses"
+                                value="{{ course[0] }}"
+                                {% if course[4] %}checked{% endif %}
+                            >
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button class="save" type="button" onclick="saveStudyPlan()">Save Plan</button>
+        </form>
+    </div>
+
+
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/generate_plan.css') }}">
+</head>
+<body>
+    
+    
+    
+    <button onclick="exportGeneratedPlan('excel')">Export Generated Plan as Excel</button>
+    <!-- Main Container -->
+    <div class="generate-plan-container">
+        <h2>Generate Your Study Plan</h2>
+
+        <!-- Input Form -->
+        <form id="generate-plan-form">
+            <label for="credit_hours">Enter Desired Credit Hours:</label>
+            <input type="number" id="credit_hours" name="credit_hours" placeholder="E.g., 15" required>
+            <button type="submit">Generate Plan</button>
+        </form>
+
+        <!-- Results Section -->
+        <div id="generated-plan-results" class="results-section">
+            <p>Your generated plan will appear here.</p>
+        </div>
+    </div>
+
+
+<script src="{{ url_for('static', filename='js/generate_plan.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

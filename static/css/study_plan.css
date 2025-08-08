@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.study-plan-container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tbody tr.completed {
+    background-color: #90ee90;
+    /* Light green for completed rows */
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.save {
+    display: block;
+    margin: 30px auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for responsiveness */
+@media screen and (max-width: 768px) {
+
+    table th,
+    table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

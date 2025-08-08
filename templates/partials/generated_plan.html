@@ -1,0 +1,50 @@
+<h3>Eligible Courses</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Category</th>
+            <th>Credit Hours</th>
+            <th>Time</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for course in eligible_courses %}
+        <tr>
+            <td>{{ course[0] }}</td>
+            <td>{{ course[1] }}</td>
+            <td>{{ course[2] }}</td>
+            <td>{{ course[3] }}</td>
+            <td>{{ course[4] }}</td>
+            <td>{{ course[5] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Your Generated Study Plan</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credit Hours</th>
+            <th>Time</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for course in plan %}
+        <tr>
+            <td>{{ course[0] }}</td>
+            <td>{{ course[1] }}</td>
+            <td>{{ course[2] }}</td>
+            <td>{{ course[3] }}</td>
+            <td>{{ course[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+

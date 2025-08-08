@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_info.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Information</h2>
+        <form id="update-form" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" value="{{ student[1] }}" required>
+                <small class="error-message" id="name-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="{{ student[3] }}" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" value="{{ student[4] }}" placeholder="e.g., +1234567890">
+                <small class="error-message" id="phone-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your address">{{ student[5] }}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" id="major" name="major" value="{{ student[2] }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password">
+            </div>
+
+            <button type="submit" class="btn-primary">Save Changes</button>
+        </form>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='js/student_info.js') }}"></script>
+
+</body>
+</html>

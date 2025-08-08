@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <title>Dashboard</title>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+    <button class="toggle-btn" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+    </button>
+    <a href="{{ url_for('auth.dashboard') }}" class="nav-link">
+        <h3 class="logo">University Portal</h3>
+    </a>
+    <a href="#" onclick="loadContent('/load-partial/student_info')" class="nav-link">
+        <i class="fas fa-user"></i>
+        <span>Student Info</span>
+    </a>
+    <a onclick="loadContent('/load-partial/study_plan')" class="nav-link">
+        <i class="fas fa-book"></i>
+        <span>Study Plan</span>
+    </a>
+    <a onclick="loadContent('/load-partial/generate_plan')" class="nav-link">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Generate Plan</span>
+    </a>
+    <a href="#" onclick="loadContent('/load-partial/guidance_plan')" class="nav-link">
+        <i class="fas fa-lightbulb"></i>
+        <span>Guidance Plan</span>
+    </a>
+    <a href="{{ url_for('auth.logout') }}" class="nav-link">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Logout</span>
+    </a>
+</div>
+
+    <!-- Content Area -->
+    <div id="content">
+    <div id="dynamic-content">
+        <div class="welcome-card">
+            <h2>Welcome, {{ student_name }}</h2>
+            <p>Explore your dashboard to manage your study plan, view your courses, and more.</p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>{{ completed_courses }}</h3>
+                <p>Courses Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ remaining_credits }}</h3>
+                <p>Credits Remaining</p>
+            </div>
+            <div class="stat-card">
+                <h3>{{ gpa }}</h3>
+                <p>GPA</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

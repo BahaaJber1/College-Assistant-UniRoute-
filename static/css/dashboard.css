@@ -1,0 +1,33 @@
+/* Additional dashboard-specific styles */
+.welcome-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: #1f75d1;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.stat-card p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}

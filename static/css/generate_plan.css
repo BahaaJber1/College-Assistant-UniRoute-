@@ -1,0 +1,85 @@
+.generate-plan-container {
+    background: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.generate-plan-container h2 {
+    color: #1f75d1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.generate-plan-container form {
+    margin-bottom: 20px;
+}
+
+.generate-plan-container label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.generate-plan-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.generate-plan-container button {
+    width: 100%;
+    background-color: #1f75d1;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.generate-plan-container button:hover {
+    background-color: #0056b3;
+}
+
+.results-section {
+    margin-top: 30px;
+}
+
+.results-section h3 {
+    color: #1f75d1;
+    margin-bottom: 10px;
+}
+
+.results-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.results-section table th,
+.results-section table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.results-section table th {
+    background-color: #1f75d1;
+    color: white;
+}
+
+.results-section table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results-section table tbody tr:hover {
+    background-color: #f1f1f1;
+}

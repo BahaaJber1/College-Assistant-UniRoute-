@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidance Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        .guidance-tables {
+            max-width: 1100px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .guidance-tables h2 {
+            text-align: center;
+            color: #1f75d1;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #1f75d1;
+            color: white;
+        }
+        table td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="guidance-tables">
+        <!-- First Year -->
+        <h4>First Year - First Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0203101</td><td>تفاضل وتكامل1</td><td></td><td>3</td></tr>
+                <tr><td>0602121</td><td>مقدمة في البرمجة</td><td>0602099</td><td>3</td></tr>
+                <tr><td>0203131</td><td>مبادئ الاحصاء 1</td><td></td><td>3</td></tr>
+                <tr><td>0203132</td><td>مختبر مبادئ الاحصاء 1</td><td>0203131</td><td>1</td></tr>
+                <tr><td>0601151</td><td>أساسيات في تكنولوجيا المعلومات</td><td></td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>16</b></td></tr>
+            </tbody>
+        </table>
+
+        <h4>First Year - Second Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0602111</td><td>رياضيات متقطعة</td><td></td><td>3</td></tr>
+                <tr><td>0601121</td><td>البرمجة الكينونية 1</td><td>0602121</td><td>3</td></tr>
+                <tr><td>0601122</td><td>مختبر البرمجة الكينونية 1</td><td>0601121</td><td>1</td></tr>
+                <tr><td>0602122</td><td>مختبر مقدمة في البرمجة</td><td>0602121</td><td>1</td></tr>
+                <tr><td>0601123</td><td>تطوير تطبيقات الويب 1</td><td>0602121</td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>17</b></td></tr>
+            </tbody>
+        </table>
+        <!-- Second Year -->
+        <h4>Second Year - First Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0602211</td><td>تراكيب البيانات</td><td>0601121</td><td>3</td></tr>
+                <tr><td>0602222</td><td>البرمجة الكينونية 2</td><td>0601121</td><td>3</td></tr>
+                <tr><td>0601222</td><td>البرمجة المرئية</td><td>0601121</td><td>3</td></tr>
+                <tr><td>0601251</td><td>نظم المعلومات</td><td>0601151</td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>18</b></td></tr>
+            </tbody>
+        </table>
+
+        <h4>Second Year - Second Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0601241</td><td>قواعد البيانات</td><td>0602211</td><td>3</td></tr>
+                <tr><td>0602212</td><td>الخوارزميات</td><td>0602211</td><td>3</td></tr>
+                <tr><td>0601242</td><td>مختبر قواعد البيانات</td><td>0601241</td><td>1</td></tr>
+                <tr><td>0601353</td><td>نظم الوسائط المتعددة</td><td>0601222</td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>16</b></td></tr>
+            </tbody>
+        </table>
+        <!--Third Year-->
+        <h4>Third Year - First Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0601321</td><td>تطوير تطبيقات الويب 2</td><td>0601123<br>0601241</td><td>3</td></tr>
+                <tr><td>0602331</td><td>نظم التشغيل</td><td>0602212</td><td>3</td></tr>
+                <tr><td>0601341</td><td>تحليل وتصميم نظم المعلومات</td><td>0601241</td><td>3</td></tr>
+                <tr><td>0602341</td><td>الذكاء الاصطناعي</td><td>0602212</td><td>3</td></tr>
+                <tr><td>0601351</td><td>التنقيب عن البيانات</td><td>0601241</td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>18</b></td></tr>
+            </tbody>
+        </table>
+
+        <h4>Third Year - Second Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0601354</td><td>مستودعات البيانات</td><td>0601241</td><td>3</td></tr>
+                <tr><td>0602351</td><td>شبكات الحاسوب</td><td>0602331</td><td>3</td></tr>
+                <tr><td>0601441</td><td>هندسة البرمجيات</td><td>0601341</td><td>3</td></tr>
+                <tr><td>0601352</td><td>نظم استرجاع المعلومات</td><td>0601241</td><td>3</td></tr>
+                <tr><td>0601355</td><td>نظم ادارة قواعد البيانات</td><td>0601241</td><td>3</td></tr>
+                <tr><td></td><td>متطلب تخصص اختياري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>18</b></td></tr>
+            </tbody>
+        </table>
+        <!--Forth Year-->
+        <h4>Forth Year - First Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0602352</td><td>مختبر شبكات الحاسوب</td><td>0602351</td><td>1</td></tr>
+                <tr><td>0601431</td><td>الحوسبة السحابية</td><td>0602351</td><td>3</td></tr>
+                <tr><td>0602453</td><td>انترنت الاشياء</td><td>0602351</td><td>3</td></tr>
+                <tr><td>0601321</td><td>الاعمال الالكترونية والتسويق الالكتروني</td><td>0601321</td><td>3</td></tr>
+                <tr><td>0601351</td><td>التنقيب عن البيانات</td><td>0601241</td><td>3</td></tr>
+                <tr><td></td><td>متطلب جامعة أجباري</td><td></td><td>3</td></tr>
+                <tr><td></td><td>متطلب تخصص اختياري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>16</b></td></tr>
+            </tbody>
+        </table>
+
+        <h4>Forth Year - Second Semester</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Prerequisite</th>
+                    <th>Credit Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>0601452</td><td>سرية وامن المعلومات</td><td>0602351</td><td>3</td></tr>
+                <tr><td>0602451</td><td>امن الشبكات</td><td>0602351</td><td>3</td></tr>
+                <tr><td>0601481</td><td>مشروع التخرج</td><td>انهاء 110 ساعة معتمدة بنجاح</td><td>3</td></tr>
+                <tr><td>0601491</td><td>التدريب الميداني</td><td>انهاء 90 ساعة معتمدة بنجاح</td><td>3</td></tr>
+                <tr><td></td><td>متطلب تخصص اختياري</td><td></td><td>3</td></tr>
+                <tr><td colspan="3"><strong>المجموع</strong></td><td><b>15</b></td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
